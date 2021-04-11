@@ -1,8 +1,9 @@
 import discord
+from .colors import get_color
 
 def embed(title, text, user, image_url = None):
   embed = discord.Embed(
-      color = 0x81a1c1,
+      color = get_color(),
       title = title,
       description = text
   )
